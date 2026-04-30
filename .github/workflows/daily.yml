@@ -1,0 +1,28 @@
+name: Daily Stock Report
+
+on:
+  schedule:
+    - cron: '0 9 * * *'   # 每天17:00北京时间=09:00 UTC
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install yfinance pandas requests
+      - name: Collect stock data
+        run: python stock_data/stock_collector_v3.py
+      - name: Generate report
+        run: python stock_data/daily_report_generator.py
+      - name: Commit and push
+        run: |
+          git config user.email "bot@workbuddy.ai"
+          git config user.name "Stock Report Bot"
+          git add index.html
+          git diff --quiet || git commit -m "Update report $(date +%Y-%m-%d)"
+          git push
