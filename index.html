@@ -53,12 +53,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .news-tag { font-size: 10px; padding: 2px 8px; border-radius: 10px; }
 .news-title { font-size: 13px; font-weight: bold; color: #e6edf3; margin-bottom: 6px; line-height: 1.4; }
 .news-detail { font-size: 12px; color: #8b949e; line-height: 1.6; }
+.news-footer { margin-top: 8px; padding-top: 6px; border-top: 1px solid #30363d; }
 </style>
 </head>
 <body>
 <div class="header">
 <h1>📊 美股简报</h1>
-<p>2026年05月04日 17:16 | 数据基于最近交易日收盘价</p>
+<p>2026年05月04日 17:20 | 数据基于最近交易日收盘价</p>
 </div>
 
 <div class="section">
@@ -70,7 +71,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 </div>
 <table class="portfolio-table">
 <thead>
-<tr><th>代码</th><th>名称</th><th>股数</th><th>买入价</th><th>当前价</th><th>浮动盈亏</th><th>分析师目标</th></tr>
+<tr><th>代码</th><th>名称</th><th>股数</th><th>买入价</th><th>买入日期</th><th>当前价</th><th>浮动盈亏</th><th>分析师目标</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -78,6 +79,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
             <td>Micron Technology</td>
             <td>1</td>
             <td>$518.46</td>
+            <td style="color:#8b949e;font-size:11px">2026-04-30</td>
             <td>$542.21</td>
             <td style="color:#00c853;font-weight:bold">▲ $23.75 (+4.6%)</td>
             <td style="color:#8b949e;font-size:11px"></td>
@@ -86,6 +88,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
             <td>NVIDIA Corporation</td>
             <td>1</td>
             <td>$209.25</td>
+            <td style="color:#8b949e;font-size:11px">2026-04-30</td>
             <td>$198.45</td>
             <td style="color:#f44336;font-weight:bold">▼ $10.80 (-5.2%)</td>
             <td style="color:#8b949e;font-size:11px"></td>
@@ -94,6 +97,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
             <td>Broadcom Inc.</td>
             <td>1</td>
             <td>$405.45</td>
+            <td style="color:#8b949e;font-size:11px">2026-04-30</td>
             <td>$421.28</td>
             <td style="color:#00c853;font-weight:bold">▲ $15.83 (+3.9%)</td>
             <td style="color:#8b949e;font-size:11px"></td>
@@ -102,6 +106,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
             <td>Western Digital Corp</td>
             <td>1</td>
             <td>$431.52</td>
+            <td style="color:#8b949e;font-size:11px">2026-05-04</td>
             <td>$431.52</td>
             <td style="color:#00c853;font-weight:bold">▲ $0.00 (+0.0%)</td>
             <td style="color:#8b949e;font-size:11px"></td>
@@ -121,54 +126,75 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
         <span class="news-category">🌏 美股</span>
         <span class="news-tag" style="background:#00c85320;color:#00c853;border:1px solid #00c85340">科技股</span>
       </div>
-      <div class="news-title">📈 标普500、纳指连创新高，连续五周上涨</div>
+      <div class="news-title">📈 <a href="https://ca.news.yahoo.com/m/551adfb4-434b-308d-b69b-0b3cb1c32b3d/stock-futures-grind-higher-as.html" target="_blank" style="color:#e6edf3;text-decoration:none">标普500、纳指连创新高，连续五周上涨</a></div>
       <div class="news-detail">标普500收涨0.29%至7230点，纳指收涨0.89%至25114点；苹果(AAPL)涨3.24%，闪迪(SNDK)涨8.25%，英特尔(INTC)涨5.44%至$99.62创历史新高，微软(MSFT)全周累涨11.12%重回全球市值第一。</div>
+      <div class="news-footer">
+        <a href="https://ca.news.yahoo.com/m/551adfb4-434b-308d-b69b-0b3cb1c32b3d/stock-futures-grind-higher-as.html" target="_blank" style="color:#58a6ff;font-size:11px;text-decoration:none">📰 Yahoo Finance → 查看原文</a>
+      </div>
     </div><div class="news-card" style="border-left-color:#f44336">
       <div class="news-header">
         <span class="news-category">⚠️ 地缘</span>
         <span class="news-tag" style="background:#f4433620;color:#f44336;border:1px solid #f4433640">原油/地缘</span>
       </div>
-      <div class="news-title">⛽ 霍尔木兹海峡危机升级，油价剧烈震荡</div>
+      <div class="news-title">⛽ <a href="https://hk.investing.com/news/commodities-news/article-1439617" target="_blank" style="color:#e6edf3;text-decoration:none">霍尔木兹海峡危机升级，油价剧烈震荡</a></div>
       <div class="news-detail">特朗普宣布将启动计划"解救"被困中立国船只，但表示伊朗提议"不可接受"。WTI原油盘中跌破$100关口，收跌2.9%至$103.90；布伦特收跌2.3%至$107.56。</div>
+      <div class="news-footer">
+        <a href="https://hk.investing.com/news/commodities-news/article-1439617" target="_blank" style="color:#58a6ff;font-size:11px;text-decoration:none">📰 Investing.com → 查看原文</a>
+      </div>
     </div><div class="news-card" style="border-left-color:#ff9100">
       <div class="news-header">
         <span class="news-category">🏛 美联储</span>
         <span class="news-tag" style="background:#ff910020;color:#ff9100;border:1px solid #ff910040">美联储</span>
       </div>
-      <div class="news-title">🔔 美联储5月8日利率决议在即</div>
+      <div class="news-title">🔔 <a href="https://news.sina.cn/2025-05-04/detail-inevmiet6521578.d.html" target="_blank" style="color:#e6edf3;text-decoration:none">美联储5月8日利率决议在即</a></div>
       <div class="news-detail">市场预期维持4.25%~4.50%不变；4月非农超预期，降息预期推迟至6-7月。鲍威尔此前表示"尚未就是否停止加息作出明确决定，将依赖数据决策"。</div>
+      <div class="news-footer">
+        <a href="https://news.sina.cn/2025-05-04/detail-inevmiet6521578.d.html" target="_blank" style="color:#58a6ff;font-size:11px;text-decoration:none">📰 新浪财经 → 查看原文</a>
+      </div>
     </div><div class="news-card" style="border-left-color:#ffd600">
       <div class="news-header">
         <span class="news-category">💰 大宗商品</span>
         <span class="news-tag" style="background:#ffd60020;color:#ffd600;border:1px solid #ffd60040">黄金/加密</span>
       </div>
-      <div class="news-title">🪙 黄金连续第二周下跌，比特币企稳$79K</div>
+      <div class="news-title">🪙 <a href="https://xnews.jin10.com/details/218193" target="_blank" style="color:#e6edf3;text-decoration:none">黄金连续第二周下跌，比特币企稳$79K</a></div>
       <div class="news-detail">非农数据强劲缓解避险情绪，黄金连续第二周收跌。比特币周末小幅走高，接近$79,000关口。</div>
+      <div class="news-footer">
+        <a href="https://xnews.jin10.com/details/218193" target="_blank" style="color:#58a6ff;font-size:11px;text-decoration:none">📰 金十数据 → 查看原文</a>
+      </div>
     </div><div class="news-card" style="border-left-color:#64dd17">
       <div class="news-header">
         <span class="news-category">🏰 巴菲特</span>
         <span class="news-tag" style="background:#64dd1720;color:#64dd17;border:1px solid #64dd1740">价值投资</span>
       </div>
-      <div class="news-title">💎 巴菲特罕见警告美元风险，宣布年底卸任CEO</div>
+      <div class="news-title">💎 <a href="https://xueqiu.com/8321198834/334001059" target="_blank" style="color:#e6edf3;text-decoration:none">巴菲特罕见警告美元风险，宣布年底卸任CEO</a></div>
       <div class="news-detail">巴菲特在伯克希尔股东大会罕见警告美元风险，称"不会投资走向地狱的货币"；批评美国财政赤字不可持续，抨击特朗普关税政策。宣布计划年底卸任CEO，连续10季度减持股票。</div>
+      <div class="news-footer">
+        <a href="https://xueqiu.com/8321198834/334001059" target="_blank" style="color:#58a6ff;font-size:11px;text-decoration:none">📰 雪球 → 查看原文</a>
+      </div>
     </div><div class="news-card" style="border-left-color:#f44336">
       <div class="news-header">
         <span class="news-category">🏙 中国资产</span>
         <span class="news-tag" style="background:#f4433620;color:#f44336;border:1px solid #f4433640">港股/中概</span>
       </div>
-      <div class="news-title">🇨🇳 港股五一暴涨，中概股集体反弹</div>
+      <div class="news-title">🇨🇳 <a href="https://m.10jqka.com.cn/20250504/c667930775.shtml" target="_blank" style="color:#e6edf3;text-decoration:none">港股五一暴涨，中概股集体反弹</a></div>
       <div class="news-detail">恒生指数涨1.24%至26095点，恒生科技指数涨超3%。纳斯达克中国金龙指数大涨3%+，小米、京东领涨。公募低位出清品种成抄底对象。</div>
+      <div class="news-footer">
+        <a href="https://m.10jqka.com.cn/20250504/c667930775.shtml" target="_blank" style="color:#58a6ff;font-size:11px;text-decoration:none">📰 同花顺 → 查看原文</a>
+      </div>
     </div><div class="news-card" style="border-left-color:#90caf9">
       <div class="news-header">
         <span class="news-category">📅 本周前瞻</span>
         <span class="news-tag" style="background:#90caf920;color:#90caf9;border:1px solid #90caf940">重要日程</span>
       </div>
-      <div class="news-title">📋 AMD、Palantir财报 + CPI数据重磅来袭</div>
+      <div class="news-title">📋 <a href="https://m.cnfin.com/wx/share/zixun/20250504/4227565_1.html" target="_blank" style="color:#e6edf3;text-decoration:none">AMD、Palantir财报 + CPI数据重磅来袭</a></div>
       <div class="news-detail">5月7日 AMD、Palantir Q1财报；5月8日 美联储利率决议；5月9日 美国4月CPI。超过100家标普500公司将公布Q1财报。</div>
+      <div class="news-footer">
+        <a href="https://m.cnfin.com/wx/share/zixun/20250504/4227565_1.html" target="_blank" style="color:#58a6ff;font-size:11px;text-decoration:none">📰 汇通网 → 查看原文</a>
+      </div>
     </div>
 </div>
 <p style="color:#6e7681;font-size:11px;margin-top:12px;text-align:right">
-  ⏰ 更新时间: 2026年05月04日 17:16 · 数据来源: 多渠道财经资讯整合
+  ⏰ 更新时间: 2026年05月04日 17:20 · 数据来源: 多渠道财经资讯整合
 </p>
 </div>
 
